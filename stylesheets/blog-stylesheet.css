@@ -1,0 +1,32 @@
+.links {
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: red;
+  outline: solid;
+}
+
+.body {
+  width: 80%;
+  display: inline-block;
+  position: relative;
+  color: blue;
+}
+
+.footer {
+  background-color: green;
+}
+
+.header {
+  width: 80%;
+  display: inline-block;
+  background-color: purple;
+  position: relative;
+}
+
+div {
+  display: inline-block;
+}

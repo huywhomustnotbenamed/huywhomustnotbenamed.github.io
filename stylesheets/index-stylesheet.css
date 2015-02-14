@@ -1,0 +1,121 @@
+body {
+  background-color: #E8F3F8;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #5A7681;
+}
+
+span, p { line-height: 140%; }
+
+main {
+  position: relative;
+  top: 500px;
+  left: -8px;
+  width: 101%;
+}
+
+a {
+  text-decoration: none;
+  color: #5A7681;
+}
+
+a:hover { color: red; }
+
+a:visited { color: #5A7681;}
+
+header {
+  position: fixed;
+  background-color: #E8F3F8;
+}
+
+nav {
+  background-color: #E8F3F8;
+  opacity: 0.8;
+  font-size: 23px;
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  padding: 7px 15px 7px 15px;
+  z-index: 10
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+section li {
+  margin: 20px;
+}
+
+section { text-align: center;}
+
+#portfolio div {
+  background-color: #E8F3F8;
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin: 30px;
+}
+
+#portfolio {
+  background-color: #DBE6EC;
+  padding: 4em;
+}
+
+footer {
+  text-align: center;
+  background-color: #A4BCC2;
+  color: white;
+  padding: 4em 0 2em 0;
+}
+
+footer a { color: white; }
+
+footer a:visited { color: white;}
+
+footer span { display: block; }
+
+#logo {
+  position: relative;
+  top: 17px;
+  left: 15px;
+  font-size: 48px;
+  letter-spacing: 5px
+}
+
+#firstName {
+  text-transform: lowercase;
+  font-weight: bolder;
+}
+
+#banner {
+  position: fixed;
+  top: 100px;
+  left: -8px;
+}
+
+#skills {
+  background-color: #81A8B8;
+  color: white;
+  padding: 4em;
+}
+
+#blog {
+  background-color: #C2CBCE;
+  padding: 4em;
+}
+
+#aboutMe {
+  background-color: #E8F3F8;
+  padding: 4em;
+}
+
+.round { border-radius: 50% }
