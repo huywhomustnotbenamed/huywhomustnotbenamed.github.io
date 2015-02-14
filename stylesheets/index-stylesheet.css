@@ -10,7 +10,7 @@ span, p { line-height: 140%; }
 main {
   position: relative;
   top: 500px;
-  left: -8px;
+  left: 0px;
   width: 101%;
 }
 
@@ -99,7 +99,7 @@ footer span { display: block; }
 #banner {
   position: fixed;
   top: 100px;
-  left: -8px;
+  left: 0px;
 }
 
 #skills {
