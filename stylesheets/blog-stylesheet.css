@@ -1,29 +1,21 @@
-.links {
-  display: inline-block;
-  height: 100%;
-  width: 20%;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  color: red;
-  outline: solid;
+body{
+  font-family: Verdana;
+  color: #81A8B8;
+}
+
+a {
+  color: #81A8B8;
 }
 
 .body {
   width: 80%;
   display: inline-block;
   position: relative;
-  color: blue;
 }
 
-.footer {
-  background-color: green;
-}
-
-.header {
-  width: 80%;
+header {
+  font-size: 15px;
   display: inline-block;
-  background-color: purple;
   position: relative;
 }
 
