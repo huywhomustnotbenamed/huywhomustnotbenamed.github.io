@@ -1,5 +1,6 @@
 body{
   font-family: Verdana;
+  font-size: 16px;
   color: #81A8B8;
 }
 
@@ -21,4 +22,11 @@ header {
 
 div {
   display: inline-block;
+}
+
+code {
+  font-size: 18px;
+  font-family: Courier;
+  color: #7C1919;
+  background-color: #DFDFDF;
 }
