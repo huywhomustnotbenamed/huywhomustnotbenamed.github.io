@@ -12,6 +12,69 @@
 <main>
   <div class="body">
 
+    <h3>Enumerable&#35;cycle</h3>
+    <h4>March 1, 2015</h4>
+
+    <p>
+      I chose the Enumerable&#35;cycle because I was not familiar with this method and it would be nice to research what it.  Here is what <a href="http://ruby-doc.org/core-2.1.0/Enumerable.html#method-i-cycle">Ruby Docs</a> has to say about this method.
+    </p>
+
+    <p>
+      <strong>cycle(n=nil) { |obj| block } → nil
+      <br>cycle(n=nil) → an_enumerator</strong>
+    </p>
+
+    <p>
+      Calls block for each element of enum repeatedly n times or forever if none or nil is given. If a non-positive number is given or the collection is empty, does nothing. Returns nil if the loop has finished without getting interrupted.
+    </p>
+
+    <p>
+      #cycle saves elements in an internal array so changes to enum after the first pass have no effect.
+
+      If no block is given, an enumerator is returned instead.
+    </p>
+
+    <p>
+      So what does this even mean in regular English?  Simply put, it allows you to call a block on your object a specific number of times, or if you don't give it a number, it will continue looping the block forever.  Let's look at some examples:
+    </p>
+
+    <p>
+      <code>a = ["a", "b", "c"]
+      <br>a.cycle { |x| puts x }  # print, a, b, c, a, b, c,.. forever.
+      <br>a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.</code>
+    </p>
+
+    <p>
+      Looking at the second line, we can see that if we use the cycle method with the block of <code>{ |x| puts x }</code>, the array will keep printing on forever.  On the third line, we see that by using the argument of 2, the array only prints twice and stops.
+    </p>
+
+    <hr>
+
+    <h3>The Patent Problem</h3>
+    <h4>March 1, 2015</h4>
+
+    <p>
+      So it is already March and it's still cold outside.  No matter, there are more important things to consider.  This morning I saw <a href="http://fortune.com/2015/02/27/how-apple-lost-533-million-to-an-8th-grade-dropout-patent-troll/?xid=yahoo_fortune">this article</a> about Apple losing $533 million dollars to a patent troll.  This problem seems to be a unnoticed by a lot of people and affects more than just the tech world.
+    </p>
+
+    <p>
+      The patent issue in tech seems to go unheard of quite often.  Even recent the lawsuit between Apple and Samsung does not shed enough light on the core problems with the patent system.  In this day and age, it is too easy to patent.  Not only is it easy to patent, it is also troubling that corporations are buying patent portfolios to sue other companies.  All of the time and money spent in the courts over these ridiculous cases could be better spent anywhere else.
+    </p>
+
+    <p>
+      My first problem with the current patent system is how easy it is to get a patent.  The system was created in a different time for different purposes.  There is no way the the old system could think of all of the intricacies of the modern world and it shouldn't have to.  There should be a new system in place that can properly handle real world issues.  Take for example, the <a href="http://www.google.com/patents/USD670286">patent USD670286 S1</a> where Apple was able to patent a portable display device in a shape of a rectangle with rounded corners or British Telecom <a href="http://www.google.com/patents/US4873662">patent US4873662 A</a> that patents the patents hyperlinks.  It seems ridiculous to be able to patent such basic and simple concepts, kind of ridiculous as a patent on toasting bread.  There's no way that the patent office would let someone patent an idea as fundamental as this.  Well <a href="http://www.google.com/patents/US6080436">patent US6080436 A</a> would make you think differently.  Apparently you can patent toast!  I should file for a patent on wearing underwear under pants before some crazy nutjob gets there first.
+    </p>
+
+    <p>
+      Another problem is that there is no real way to protect yourself from patent trolls if you are a small business. If you were sued by a troll, the time and effort it would take to fight could be the ruin of your company.  Even if small businesses won in court, the drawn out battle and hefty lawyer fees the damage would already be done.  Even settling the lawsuit would not be a clear victory.  The amount of money to settle would cut into profits if you even had enough money to pay it.
+    </p>
+
+    <p>
+      The system is clearly broken but how do we fix it?  I don't know, I am not familiar enough with it to give any answers, nor is anyone asking me for them.  I would suggest that patent reform be taken seriously.  We cannot innovate if we are being stifled by trolls and corporations wielding frivolous patents.  Until then, we can only hope we don't get caught in this mess.
+    </p>
+
+    <hr>
+
     <h3>My Thinking Style and Learning</h3>
     <h4>February 22, 2015</h4>
 
