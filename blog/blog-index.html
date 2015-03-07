@@ -12,6 +12,60 @@
 <main>
   <div class="body">
 
+    <h3>Ruby Classes</h3>
+    <h4>March 7, 2015</h4>
+
+    <p>
+      Classes in Ruby are like the blueprints.  They tell your object what to do when you call it.  I will use an example of a die to show you what I mean.  Let's think about what a die needs to do.  To start, a regular die has six sides; numbers 1-6.  When you pick it up and roll it, a random side will land upright.  So that's it.  The basics of a die is that it starts off with one side up and when you roll it, a random side will land faceup.
+    </p>
+
+    <p>
+      <div class="code">
+        class Die
+        <span class="indent1">def initialize</span>
+        <span class="indent2">@sides = sides</span>
+        <span class="indent1">end</span>
+        <span class="indent1">def sides</span>
+        <span class="indent2">@sides</span>
+        <span class="indent1">end</span>
+        <span class="indent1">def roll</span>
+        <span class="indent2">rand(1..6)</span>
+        <span class="indent1">end</span>
+        end
+        <br>
+        <br>
+        <span>die = Die.new</span>
+        <span>die.roll</span>
+        <br>
+        <span>dice = [Die.new, Die.new]</span>
+        <span>dice.each { |die| puts die.roll }</span>
+        <span></span>
+        <span></span>
+      </div>
+    </p>
+
+    <p>
+      Now this is an extremely basic example but it does allow us to examine the basics of Classes.  To start off, Classes in Ruby begin with a capital letter.  You may have noticed that there is a way to create an Array like this: <code>array = Array.new</code> or creating a Hash like this: <code>hash = Hash.new</code>.  Notice that the letter "A" and "H" both have to be capitalized.  That's because those are Classes.  You could do the same for Strings and Integers but it is a lot easier just to type in <code>string = "This is a new string"</code> or <code>num = 12121</code>.
+    </p>
+
+    <p>
+      Next we see that there is an initialize method.  The method is not necessary but will be a method that runs automatically when you call on a Class.  A good way to think of it in this situation is that you cannot have a die that doesn't have any sides.  A die resting will be on one side or the other, that's why it makes sense that sides would be initialized.  Below that, you can see that there is a method for sides that just returns the instance variable sides.  This could be done with the attr_reader method but I won't go into that here.
+    </p>
+
+    <p>
+      Here we finally come to some good stuff in our class.  This roll method is what we have been waiting for.  It allows us to roll the die and return a random number between 1 and 6.  You may not be familiar with <code>rand()</code> but it is quite simple.  When you put an argument into rand, it will return a random number between 0 and the number before that argument.  I used the range 1..6 instead to make it cleaner to see. This acts just like how we expect a normal die would.
+    </p>
+
+    <p>
+      Okay, now that we have our Class, what can we do with it?  Well looking on the next line, you can see where I created a new object called die and set it equal to a new Die class.  This is just like creating those Arrays and Hashes above.  By setting the die to Die.new, I am creating a new instance of that object.  This is what is called instantiation.  Now with this new object, I can finally do what this Class was made to do.  By now using <code>die.roll</code> I am now using the method I just created.  This roll will now generate a random number as explained earlier.
+    </p>
+
+    <p>
+      What if we wanted dice instead of a die?  Well you can see in the last part of the code that I have done just that.  I made this new object called dice out of an Array of two Die classes.  When dice is called, it will return two dice with two random numbers just like we expect.  To do this, we need to iterate through the array.  This may seem more complex, but it really just means that the code is run through each part of the Array and does what we tell it, in this case we tell it to use the roll method on each part of the Array.
+    </p>
+
+  <hr>
+
     <h3>Pairing &amp; Feedback</h3>
     <h4>March 5, 2015</h4>
 
@@ -63,10 +117,10 @@
       So what does this even mean in regular English?  Simply put, it allows you to call a block on your object a specific number of times, or if you don't give it a number, it will continue looping the block forever.  Let's look at some examples:
     </p>
 
-    <p>
-      <code>a = ["a", "b", "c"]
+    <p class="code">
+      a = ["a", "b", "c"]
       <br>a.cycle { |x| puts x }  # print, a, b, c, a, b, c,.. forever.
-      <br>a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.</code>
+      <br>a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.
     </p>
 
     <p>
