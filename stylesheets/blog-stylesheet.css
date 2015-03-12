@@ -54,3 +54,19 @@ code {
 div span {
   display: block;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+li {
+  display: inline;
+  padding: 3px;
+}
+
+nav {
+  margin-top: 20px;
+  width: 80%;
+}
