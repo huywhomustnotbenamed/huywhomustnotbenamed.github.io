@@ -38,6 +38,61 @@
 <main>
   <div class="body">
 
+    <h3 id="stereo">Class Methods</h3>
+    <h4>March 13, 2015</h4>
+
+    <p>
+      What exactly is a class method?  In the most basic terms, a class method is a method that is a method that is called on a class.  In contrast, an instance method, is a method that is called on an instance of that class. Let's look at a quick example.
+    </p>
+
+    <p>
+      Class method:
+      <div class="code">
+        class Example
+        <span class="indent1">def self.test</span>
+        <span class="indent2">puts "I am a class method"</span>
+        <span class="indent1">end</span>
+        end
+        <span>Example.test</span>
+      </div>
+    </p>
+
+    <p>
+      Instance method:
+      <div class="code">
+        class Example
+        <span class="indent1">def test</span>
+        <span class="indent2">puts "I an instance method"</span>
+        <span class="indent1">end</span>
+        end
+        <span>example = Example.new</span>
+        <span>example.test</span>
+      </div>
+    </p>
+
+    <p>
+      Hopefully by looking at this example, it will clear up some confusion.  You might have noticed the differnce between the two if you had a keen eye.  There are two takeaways I want to point out.  The first is that the class method is written differently; the other is that the method test is called directly on the class.
+    </p>
+
+    <p>
+      So how do you write a class method?  By looking at our example above, we see that one way to do this is to use the syntax <code>self.method_name</code>.  Another way is to use the syntax <code>class << self</code> before you write your method.  It would look like this:
+      <div class="code">
+        class Example
+        <span class="indent1">class << self</span>
+        <span class="indent2">def test</span>
+        <span class="indent3">puts "I am a class method"</span>
+        <span class="indent2">end</span>
+        <span class="indent1">end</span>
+        end
+      </div>
+    </p>
+
+    <p>
+      The other difference we learned about class method is that they are called directly on our class.  In my example above, you can see that the class method test was called on the class Example.  In the instance method, you had to instantiate the class first and then call the method on your instantiated class.  This basically means that class methods are called on classes, instance methods are called on instances.
+    </p>
+
+    <hr>
+
     <h3 id="stereo">Stereotype Threats</h3>
     <h4>March 11, 2015</h4>
 
