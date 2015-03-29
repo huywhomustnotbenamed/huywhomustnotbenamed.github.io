@@ -12,6 +12,8 @@
 <nav>
   Blog Posts:
   <ul>
+    <li><a href="#regex">Basic Regular Expression</a></li>
+    <li>/</li>
     <li><a href="#conflicts">Conflicts</a></li>
     <li>/</li>
     <li><a href="#values">Values</a></li>
@@ -45,6 +47,31 @@
 
 <main>
   <div class="body">
+
+    <h3 id="regex">Basic Regular Expression</h3>
+    <h4>March 25, 2015</h4>
+
+    <p>
+      I was interested in learning regular expression(regexp) because I had seen it mentioned before in our coursework that we shouldn't be using regexp yet and saw some examples of it on Stack Overflow.  It looked very foreign and in my research, it is still quite a mystery but at least I have a good idea what it is now.  To start, my understanding of regexp is a way to match patterns in strings.  In layman's terms it means that if I had a sentence like "This is an example sentence I though up", I try to find various patterns like say I wanted to find how many times the letter "A" appears or if there are any numbers in that string.
+    </p>
+
+    <p>
+      To understand regexp, we have to learn the syntax.  The syntax is quite easy, you will see that regexp begins with a forward slash and ends with a forward slash.  A common method used with regexp is match.  Match can be written as the operator <code>#match</code> or <code>=~</code>.  The match method lets you see if the regexp matches a string.  An example would be if I was trying to see if a string contained the letter "Y", the regexp would be <code>/y/</code>.    So that means that I could write <code>/y/ =~ "Huy"</code> and the result would return <code>=> 1</code>.  I could also write <code>/huy/.match("huy")</code> and the result would be <code>#&lt;MatchData "Huy"&gt;</code>.  If it did not find a match, it would return nil.
+    </p>
+
+    <p>
+      Regexp can be a very powerful tool if used correctly.  It really cuts down on work and makes it easy to be a good lazy programmer.  One example I learned is that I can search a string to see if it contains a number.  This would be useful in situations where you asked for someone's name, you don't want them entering numbers.  My name would not be "Huy99".  Maybe it would, but it is not likely.  If I wanted to see if "Huy99" contained numbers, I can write <code>"Huy99".match(/[0-9]/)</code>.  The result would be <code>#&lt;MatchData 1&gt;</code>.  I didn't mention it before, but the <code>[0-9]</code> inside the regexp means that it is looking for any digits from 0 to 9.  It could also be written <code>[123456789]]</code> but that is a more tedious way of doing it.  Can you guess what <code>[a-z]</code> is looking for?  If you said any lowercase letter from a to z you would be correct.
+    </p>
+
+    <p>
+      Another thing you can do with regexp is finding and replacing values in your string.  Let's say I had a string "Hi Mom!" and I wanted to replace the first two characters to be "bye", I can use regexp to find the first two characters at the beginning of the line. It would look like this: <code>/^../</code>.  We are seeing two new things here: 1. the first is the ^.  All this means is only look for a match at the beginning of the line and 2. the two dots.  The two dots represents 2 characters.  Those characters could be a letters, numbers, special characters or even whitespace.  Now we can use regexp to find the first two characters at the beginning of our line, we can use the method <code>#sub</code> to make the replacement.  Our code would be <code>"Hi Mom!".sub(/^../, "Bye")</code>.  That would return "Bye Mom!"
+    </p>
+
+    <p>
+      I only showed you two basic examples, but with the right use, they can be extremely powerful tools in your arsenal.  Think about what you want and use regexp to get it done more efficiently!
+    </p>
+
+    <hr>
 
     <h3 id="conflicts">Conflicts</h3>
     <h4>March 22, 2015</h4>
