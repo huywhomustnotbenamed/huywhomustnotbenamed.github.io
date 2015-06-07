@@ -1,0 +1,3 @@
+- Project Bar is at the bottom of the screen on window load, footer will still be below that but will be hidden until scrolling down
+- Image hover for projects
+- Text rotate on tags? or maybe over ther problem solver part when hovered

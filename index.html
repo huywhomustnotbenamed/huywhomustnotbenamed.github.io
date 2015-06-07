@@ -1,93 +1,74 @@
 <!DOCTYPE html>
-<head>
-  <link rel="stylesheet" type="text/css" href="stylesheets/index-stylesheet.css">
-  <meta charset="UTF-8">
-  <Title>Huy Huynh</title>
-</head>
-
-<header>
-  <div id="logo"><span id="firstName">huy</span>huynh</div>
-</header>
-
-<nav>
-  <ul>
-    <li><a href="#portfolioSection">portfolio</a></li>
-    <li>/</li>
-    <li><a href="#skillsSection">skills</a></li>
-    <li>/</li>
-    <li><a href="#blogSection">blog</a></li>
-    <li>/</li>
-    <li><a href="#aboutMeSection">about me</a></li>
-    <li>/</li>
-    <li><a href="#footerSection">contact</a></li>
-  </ul>
-</nav>
-
-<section id="banner">
-  <img src="imgs/banner.jpg" width="100%" alt="banner" />
-</section>
-
-<main>
-  <a id="portfolioSection"></a>
-  <section id="portfolio">
-    <h1>portfolio</h1>
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
-
-  <a id="skillsSection"></a>
-  <section id="skills">
-    <h1>skills</h1>
+<html>
+  <head>
+    <title>Huy</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="image-hover.css">
+    <link href='http://fonts.googleapis.com/css?family=Halant:300,400|Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="modernizr.custom.57828.js"></script>
+    <script src="img.js"></script>
+  </head>
+  <nav>
+    <div class="name">Huy Huynh</div>
     <ul>
-      <li><img src="imgs/ccs.png" alt="ccs" class="round"/></li>
-      <li><img src="imgs/html.png" alt="html" class="round" /></li>
-      <li><img src="imgs/ruby.png" alt="ruby" class="round" /></li>
-      <li><img src="imgs/rail.png" alt="rails" class="round"/></li>
-      <li><img src="imgs/github1.png" alt="github" class="round" /></li>
+      <li class="current-page">About</li>
+      <li>Resume</li>
+      <li>Projects</li>
+      <li>Contact</li>
     </ul>
-  </section>
+  </nav>
+  <body>
+    <section class="middle-text">
+      <h1>I am a Full Stack Web Developer and problem solver.</h1>
+      <ul id="tags">
+        <li>Ruby on Rails</li>
+        <li>Sass</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>Rspec</li>
+      </ul>
+    </section>
 
-  <a id="blogSection"></a>
-  <section id="blog">
-    <h1>blog</h1>
-    <span>
-      <p>blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog </p>
-      <p>blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog </p>
-    </span>
-  </section>
+    <section class="portfolio">
+      <div class="project"><img src="1.png" alt='inspiration' /></div>
+      <div class="project"><img src="1.png" alt='inspiration' /></div>
+      <div class="project"><img src="1.png" alt='inspiration' /></div>
+    </section>
 
-  <a id="aboutMeSection"></a>
-  <section id="aboutMe">
-    <h1>about me</h1>
-    <div><img src="imgs/headshot.jpeg" alt="headshot" class="round" /></div>
-    <div>
-      <span>
-        <p>
-          about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me
-        </p>
-        <p>
-          about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me
-       </p>
-     </div>
-    </span>
-  </section>
-
-  <footer>
-    <a id="footerSection"></a>
-    <div>
-      <span>huy huynh</span>
-      <span>chicago il 60613</span>
-      <span><a href="mailto:huyhuynh85@gmail.com">huyhuynh85@gmail.com</a></span>
-      <span>
-        <ul>
-          <li><a href="#"><img src="imgs/facebook.png" /></li>
-          <li><a href="#"><img src="imgs/github.png" /></li>
-          <li><a href="#"><img src="imgs/googleplus.png" /></li>
-          <li><a href="#"><img src="imgs/linkedin.png" /></li>
-          <li><a href="#"><img src="imgs/twitter.png" /></li>
-        </ul>
-      </span>
-    </div>
-  </footer>
-</main>
+<!--     <section class="hover">
+      <div id="effect-2" class="effects clearfix">
+          <div class="img">
+              <img src="1.png" alt="">
+              <div class="overlay">
+                  <a href="#" class="expand">Little_Victories</a>
+                  <a class="close-overlay hidden">x</a>
+              </div>
+          </div>
+          <div class="img">
+              <img src="1.png" alt="">
+              <div class="overlay">
+                  <a href="#" class="expand">Little_Victories</a>
+                  <a class="close-overlay hidden">x</a>
+              </div>
+          </div>
+          <div class="img">
+              <img src="1.png" alt="">
+              <div class="overlay">
+                  <a href="#" class="expand">Little_Victories</a>
+                  <a class="close-overlay hidden">x</a>
+              </div>
+          </div>
+      </div>
+    </section> -->
+  </body>
+<!--   <footer>
+    <h2>Contact Me</h2>
+    <ul>
+      <li>Github</li>
+      <li>Linked In</li>
+      <li>Email</li>
+    </ul>
+  </footer> -->
+</html>
