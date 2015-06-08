@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 title {
   font-weight: 600;
 }
@@ -34,6 +38,10 @@ nav li {
 nav li:hover {
   padding-bottom: 1.5em;
   border-bottom: 2px solid #F16162;
+}
+
+nav a {
+  font-size: 1.3em;
 }
 
 .current-page a {
