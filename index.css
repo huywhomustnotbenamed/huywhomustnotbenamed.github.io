@@ -83,6 +83,9 @@ nav li:hover {
   width: 100%;
   box-sizing: border-box;
   font-size: 0;
+/*  position: absolute;
+  bottom: 0;*/
+  float: bottom;
 }
 
 .project {
@@ -111,8 +114,10 @@ nav li:hover {
 }
 
 footer {
+/*  position: absolute;
+  bottom: 0;*/
   background-color: #eeeeee;
   height: 200px;
   text-align: center;
-  padding: 5em 0;
+  padding: 2em 0;
 }

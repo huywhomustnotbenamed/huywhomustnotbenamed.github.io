@@ -9,48 +9,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="modernizr.custom.57828.js"></script>
     <script src="img.js"></script>
-     <script type="text/javascript">
-
-    (function($){
-    $.fn.extend({
-        rotaterator: function(options) {
-
-            var defaults = {
-                fadeSpeed: 2500,
-                pauseSpeed: 4100,
-        child:null
-            };
-
-            var options = $.extend(defaults, options);
-
-            return this.each(function() {
-                  var o = options;
-                  var obj = $(this);
-                  var items = $(obj.children(), obj);
-          items.each(function() {$(this).hide();})
-          if(!o.child){var next = $(obj).children(':first');
-          }else{var next = o.child;
-          }
-          $(next).fadeIn(o.fadeSpeed, function() {
-            $(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
-              var next = $(this).next();
-              if (next.length == 0){
-                  next = $(obj).children(':first');
-              }
-              $(obj).rotaterator({child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
-            })
-          });
-            });
-        }
-    });
-})(jQuery);
-
- $(document).ready(function() {
-        $('#rotate').rotaterator({fadeSpeed:800, pauseSpeed:4100});
- });
-
-     </script>
-
+     <script type="text/javascript" src="rotator.js"></script>
   </head>
   <nav>
     <div class="name">Huy_Huynh</div>
@@ -82,13 +41,13 @@
       </ul>
     </section>
 
- <!--    <section class="portfolio">
+    <section class="portfolio">
       <div class="project"><img src="1.png" alt='inspiration' /></div>
       <div class="project"><img src="1.png" alt='inspiration' /></div>
       <div class="project"><img src="1.png" alt='inspiration' /></div>
-    </section> -->
+    </section>
 
-    <section class="hover">
+<!--     <section class="hover">
       <div id="effect-2" class="effects clearfix">
           <div class="img">
               <img src="1.png" alt="">
@@ -112,14 +71,14 @@
               </div>
           </div>
       </div>
-    </section>
+    </section> -->
   </body>
-<!--   <footer>
+  <footer>
     <h2>Contact Me</h2>
     <ul>
       <li>Github</li>
       <li>Linked In</li>
       <li>Email</li>
     </ul>
-  </footer> -->
+  </footer>
 </html>
