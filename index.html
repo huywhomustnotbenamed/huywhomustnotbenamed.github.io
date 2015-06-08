@@ -5,12 +5,52 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="image-hover.css">
-    <link rel="stylesheet" href="simpletextrotator.css">
     <link href='http://fonts.googleapis.com/css?family=Halant:300,400|Raleway:400,300,600' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="modernizr.custom.57828.js"></script>
     <script src="img.js"></script>
-    <script src="jquery.simple-text-rotator.js"></script>
+     <script type="text/javascript">
+
+    (function($){
+    $.fn.extend({
+        rotaterator: function(options) {
+
+            var defaults = {
+                fadeSpeed: 2500,
+                pauseSpeed: 4100,
+        child:null
+            };
+
+            var options = $.extend(defaults, options);
+
+            return this.each(function() {
+                  var o = options;
+                  var obj = $(this);
+                  var items = $(obj.children(), obj);
+          items.each(function() {$(this).hide();})
+          if(!o.child){var next = $(obj).children(':first');
+          }else{var next = o.child;
+          }
+          $(next).fadeIn(o.fadeSpeed, function() {
+            $(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+              var next = $(this).next();
+              if (next.length == 0){
+                  next = $(obj).children(':first');
+              }
+              $(obj).rotaterator({child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
+            })
+          });
+            });
+        }
+    });
+})(jQuery);
+
+ $(document).ready(function() {
+        $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:5100});
+ });
+
+     </script>
+
   </head>
   <nav>
     <div class="name">Huy_Huynh</div>
@@ -23,7 +63,15 @@
   </nav>
   <body>
     <section class="middle-text">
-      <h1>I am a Full Stack Web Developer and problem solver.</h1>
+      <h1>
+        I am a Full Stack Web Developer and
+        <span id="rotate">
+          <span>problem solver.</span>
+          <span>instructor.</span>
+          <span>motorcyclist.</span>
+          <span>photographer.</span>
+      </span>
+    </h1>
       <ul id="tags">
         <li>Ruby on Rails</li>
         <li>Sass</li>
