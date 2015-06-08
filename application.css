@@ -3,3 +3,7 @@
 @import "image-hover.css";
 @import "about.css";
 
+.container {
+  width: 800px;
+  margin: 7em auto;
+}
