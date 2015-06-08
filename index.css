@@ -36,7 +36,7 @@ nav li:hover {
   border-bottom: 2px solid #F16162;
 }
 
-.current-page {
+.current-page a {
   color: #F16162;
 }
 
