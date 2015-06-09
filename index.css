@@ -4,6 +4,15 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {  }
+
 nav {
   padding: 5em 6em 2em 6em;
 }
@@ -25,9 +34,23 @@ title {
   font-size: 50px;
 }
 
-nav ul {
+/*nav ul {
   list-style-type: none;
   float: right;
+}*/
+
+.navbar {
+  height: 180px;
+  background-color: #FBFBFB;
+  border: 0;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+.navbar-brand {
+  font-size: 40px;
 }
 
 nav li {
