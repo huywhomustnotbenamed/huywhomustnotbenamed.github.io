@@ -2,6 +2,7 @@
 @import "index.css";
 @import "image-hover.css";
 @import "about.css";
+@import "resume.css";
 
 .container {
   width: 800px;
