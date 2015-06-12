@@ -49,12 +49,20 @@ title {
   border: 0;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+  color: #F16162;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #F16162;
+}
+
 .navbar-nav {
   float: right;
 }
 
 .navbar-brand {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 nav li {
@@ -149,10 +157,21 @@ nav a {
 }
 
 footer {
-/*  position: absolute;
-  bottom: 0;*/
+  position: absolute
+  bottom: 0;
   background-color: #eeeeee;
-  height: 200px;
+  height: 165px;
   text-align: center;
   padding: 2em 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
 }
