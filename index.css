@@ -157,6 +157,9 @@ nav a {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
   clear: both;
   background-color: #eeeeee;
   height: 165px;
