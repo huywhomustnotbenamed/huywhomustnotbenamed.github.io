@@ -157,8 +157,7 @@ nav a {
 }
 
 footer {
-  position: absolute
-  bottom: 0;
+  clear: both;
   background-color: #eeeeee;
   height: 165px;
   text-align: center;
@@ -173,5 +172,13 @@ footer ul {
 
 footer li {
   display: inline-block;
-  margin: 0 1em;
+  margin: 0 2em;
+}
+
+footer h2 {
+  font-size: 1.6em;
+}
+
+footer a {
+  font-size: 1.3em;
 }
