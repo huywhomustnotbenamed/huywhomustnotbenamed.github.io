@@ -73,6 +73,21 @@ a.expand {
   /*border-radius: 30px;*/
 }
 
+a.expand-body {
+  display: block;
+  position: relative;
+  z-index: 100;
+/*  width: 60px;
+  height: 60px;*/
+  /*border: solid 5px #fff;*/
+  text-align: center;
+  color: #ffffff;
+  /*line-height: 50px;*/
+  /*font-weight: 700;*/
+  font-size: 17px;
+  /*border-radius: 30px;*/
+}
+
 #effect-2 .overlay {
   top: 0;
   left: 0;
@@ -82,6 +97,13 @@ a.expand {
 }
 
 #effect-2 .overlay a.expand {
+  left: 0;
+  right: 0;
+  top: 45%;
+  margin: -30px auto 0 auto;
+}
+
+#effect-2 .overlay a.expand-body {
   left: 0;
   right: 0;
   top: 55%;
