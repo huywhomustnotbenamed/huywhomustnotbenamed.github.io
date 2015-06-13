@@ -79,6 +79,11 @@ nav a {
   font-size: 1.3em;
 }
 
+.navbar-default .current-page {
+  color: #F16162;
+  /*background-color: blue;*/
+}
+
 .current-page a {
   color: #F16162;
 }
