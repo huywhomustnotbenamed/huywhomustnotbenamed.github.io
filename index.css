@@ -31,7 +31,7 @@ title {
 
 .name {
   float: left;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 nav {
@@ -80,7 +80,7 @@ nav a {
   font-size: 1.3em;
 }
 
-.navbar-default .current-page {
+.current-page {
   color: #F16162;
   /*background-color: blue;*/
 }
