@@ -1,7 +1,13 @@
 a[href="Huy-Huynh-Resume.pdf"] {
-  border: 2px solid #F16162;
+  border: 2px solid #777;
   padding: 0.5em 1em;
-  font-size: 1.3em;
+  font-size: 1em;
+}
+
+a[href="Huy-Huynh-Resume.pdf"]:hover {
+  border: 2px solid #F16162;
+  color: white;
+  background-color: #F16162;
 }
 
 .resume article {
