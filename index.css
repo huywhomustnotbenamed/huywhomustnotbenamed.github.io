@@ -195,10 +195,9 @@ footer a {
 #toTop {
  display: block;
  position: fixed;
- top: 50%;
+ top: 75%;
  right: 0;
  padding: 10px;
- border: 2px solid red;
+ /*border: 2px solid red;*/
  background: white;
-
 }
