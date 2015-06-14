@@ -15,10 +15,6 @@ body {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {  }
 
-nav {
-  padding: 5em 6em 2em 6em;
-}
-
 a {
   color: #777;
   text-decoration: none;
@@ -38,15 +34,20 @@ title {
   font-size: 50px;
 }
 
-/*nav ul {
+nav {
+  padding: 5em 6em 2em 6em;
+  /*border: 1px solid black;*/
+}
+
+nav ul {
   list-style-type: none;
   float: right;
-}*/
+}
 
 .navbar {
   height: 120px;
   background-color: #FBFBFB;
-  border: 0;
+  border: 1px solid black;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
