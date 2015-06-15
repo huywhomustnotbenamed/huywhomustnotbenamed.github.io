@@ -1,14 +1,12 @@
 .projects img {
-  width: 50%;
+  width: 100%;
   display: inline-block;
 }
 
-.projects p {
-  /*display: inline-block;*/
-  position: relative;
-  float: right;
+.projects td {
+  padding: 2em 0;
 }
 
-.projects {
-  border: 1px solid black;
+.projects tr:nth-child(even) td:first-child {
+  width: 50%;
 }
