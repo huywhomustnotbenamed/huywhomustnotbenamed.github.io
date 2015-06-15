@@ -4,8 +4,9 @@
 }
 
 .projects p {
-  display: inline-block;
-  /*float: right;*/
+  /*display: inline-block;*/
+  position: relative;
+  float: right;
 }
 
 .projects {
