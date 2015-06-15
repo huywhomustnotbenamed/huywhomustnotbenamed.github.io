@@ -1,0 +1,13 @@
+.projects img {
+  width: 50%;
+  display: inline-block;
+}
+
+.projects p {
+  display: inline-block;
+  /*float: right;*/
+}
+
+.projects {
+  border: 1px solid black;
+}
