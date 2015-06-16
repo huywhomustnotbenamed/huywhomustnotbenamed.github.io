@@ -1,3 +1,10 @@
 img[src="desktop.jpeg"] {
   width: 100%;
 }
+
+.about span {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
