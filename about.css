@@ -8,3 +8,21 @@ img[src="desktop.jpeg"] {
   font-size: 1.5em;
 }
 
+.things-about-me {
+  width: 620px;
+  margin: 2em auto;
+  color: white;
+}
+
+.things-about-me div {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: #ccc;
+  padding: 1em 0.5em;
+  margin-top: 4px;
+  text-align: right;
+  vertical-align: middle;
+  line-height:1.2em;
+}
