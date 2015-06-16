@@ -11,3 +11,19 @@
   width: 100%;
   display: inline-block;
 }
+
+.demo-code a:visited {
+}
+
+.demo-code a:link {
+  border: 2px solid #777;
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-right: 0.5em;
+}
+
+.demo-code a:hover {
+  border: 2px solid #F16162;
+  color: white;
+  background-color: #F16162;
+}
