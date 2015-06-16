@@ -26,6 +26,7 @@ article h2 {
   width: 20%;
   height: 100%;
   color: #F16162;
+  text-transform: uppercase;
 }
 
 article h4 {
