@@ -3,9 +3,7 @@ img[src="desktop.jpeg"] {
 }
 
 .about span {
-  font-style: italic;
   font-weight: 600;
-  font-size: 1.5em;
 }
 
 .things-about-me {
