@@ -25,11 +25,20 @@ article h2 {
   float: left;
   width: 20%;
   height: 100%;
+  color: #F16162;
+}
+
+article h4 {
+  color: #ACACAC;
 }
 
 article div {
   float: right;
   width: 80%;
+}
+
+article div span{
+  float: right;
 }
 
 .clearfix {
