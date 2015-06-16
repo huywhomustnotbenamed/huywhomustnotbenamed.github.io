@@ -1,13 +1,11 @@
-section {
-  border: 1px solid black;
-}
-
 .projects div {
-  border: 1px solid black;
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+  padding: 2% 2%;
   width: 49%;
+  margin: 0;
   display: inline-block;
   vertical-align: top;
-  margin: 0 auto;
 }
 .projects img {
   width: 100%;
