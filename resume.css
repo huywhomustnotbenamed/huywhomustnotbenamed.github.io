@@ -1,5 +1,7 @@
 a[href="Huy-Huynh-Resume.pdf"] {
   border: 2px solid #777;
+  margin-top: 2em;
+  display: inline-block;
   padding: 0.5em 1em;
   font-size: 1em;
 }
@@ -11,6 +13,25 @@ a[href="Huy-Huynh-Resume.pdf"]:hover {
 }
 
 .resume article {
-  padding: 3em;
-  border-bottom: 1px solid #ccc;
+  padding: 1em;
+  border-top: 1px solid #ccc;
+}
+
+.resume article:first-child {
+  border-top: 0;
+}
+
+article h2 {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+article div {
+  float: right;
+  width: 80%;
+}
+
+.clearfix {
+  overflow: auto;
 }

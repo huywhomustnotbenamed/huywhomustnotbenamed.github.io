@@ -11,11 +11,3 @@
   width: 100%;
   display: inline-block;
 }
-
-.projects td {
-  padding: 2em 0;
-}
-
-.projects tr:nth-child(even) td:first-child {
-  width: 50%;
-}
