@@ -15,13 +15,25 @@ img[src="desktop.jpeg"] {
   color: #595959;
 }
 
+.things-about-me h4 {
+  /*display: inline;*/
+  padding-bottom: 0.5em;
+}
+
+.things-about-me p {
+  border-top: 1px solid #595959;
+  padding-top: 1em;
+  margin-top: 0.5em;
+  display: inline;
+}
+
 .things-about-me div {
   box-sizing: border-box;
   display: inline-block;
   width: 33%;
   height: 150px;
   background-color: #eeeeee;
-  padding: 1em 0.5em;
+  padding: 0 0.5em;
   margin-top: 4px;
   text-align: right;
   vertical-align: middle;
@@ -29,5 +41,4 @@ img[src="desktop.jpeg"] {
 
 .things-about-me div:last-child {
   background-color: #F16162;
-  border: 3px solid #F16162;
 }
