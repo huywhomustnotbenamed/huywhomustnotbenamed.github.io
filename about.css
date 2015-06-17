@@ -7,20 +7,27 @@ img[src="desktop.jpeg"] {
 }
 
 .things-about-me {
-  width: 620px;
   margin: 2em auto;
-  color: white;
+  /*color: white;*/
+}
+
+.things-about-me h2 {
+  color: #595959;
 }
 
 .things-about-me div {
   box-sizing: border-box;
   display: inline-block;
-  width: 150px;
+  width: 33%;
   height: 150px;
-  background-color: #ccc;
+  background-color: #eeeeee;
   padding: 1em 0.5em;
   margin-top: 4px;
   text-align: right;
   vertical-align: middle;
-  line-height:1.2em;
+}
+
+.things-about-me div:last-child {
+  background-color: #F16162;
+  border: 3px solid #F16162;
 }
