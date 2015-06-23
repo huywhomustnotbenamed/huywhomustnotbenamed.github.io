@@ -25,6 +25,8 @@ img[src="desktop.jpeg"] {
   padding-top: 1em;
   margin-top: 0.5em;
   display: inline;
+  font-family: 'Halant', serif;
+  font-size: 1.1em;
 }
 
 .things-about-me div {
