@@ -90,7 +90,7 @@ nav a {
 }
 
 .middle-text {
-  min-width: 70%;
+  max-width: 70%;
   margin: 16% auto;
 }
 
