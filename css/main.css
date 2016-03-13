@@ -56,6 +56,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: #eceff1;
+}
+
 header {
     background-image: url("../img/header-image.jpg");
     min-height: 600px;
