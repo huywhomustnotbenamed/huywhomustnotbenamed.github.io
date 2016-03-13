@@ -136,9 +136,18 @@
                     </div>
                 </div>
             </section>
-            <section class="skills container"></section>
+            <section class="skills blue-grey darken-4 white-text">
+                <article class="container">
+                    <h1>Skills</h1>
+                </article>
+            </section>
             <section class="about container"></section>
-            <footer></footer>
+            <div class="parallax-container">
+                <div class="parallax"><img src="img/paralax-image.jpg"></div>
+            </div>
+            <footer>
+                <h1>Footer</h1>
+            </footer>
         </main>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -154,6 +163,7 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            $('.parallax').parallax();
         </script>
     </body>
 </html>

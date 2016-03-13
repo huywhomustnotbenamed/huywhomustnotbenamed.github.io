@@ -66,8 +66,9 @@ header {
     color: white;
 }
 
-
-
+.parallax-container {
+    height: 300px;
+}
 
 
 
