@@ -59,7 +59,7 @@ textarea {
 body {
     background-color: #eceff1;
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: 200;
 }
 
 header {
@@ -70,6 +70,11 @@ header {
 
 section {
     padding: 50px 0;
+}
+
+h1 {
+    font-family: 'Arapey', serif;
+    text-align: center;
 }
 
 .parallax-container {
