@@ -84,19 +84,46 @@ h1 {
 
 .things h3 {
     font-size: 1em;
+    font-family: 'Arapey', serif;
+    margin: 0;
+
+}
+
+.things .col:nth-child(n+6) {
+    border-top: 1px solid #cfd8dc;
 }
 
 .things .col {
-    border-top: 1px solid grey;
+    border-left: 1px solid #cfd8dc;
+    padding: 30px 0;
+    text-align: center;
 }
 
-.things .col {
-    border-left: 1px solid grey;
+.things .card {
+    opacity: 0.5;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
+.things .card:hover {
+    /*background-color: grey !important;*/
+    opacity: 1;
+}
 
+.things .col:nth-child(6), .col:nth-child(2) {
+    border-left: 0;
+}
 
-
+.things .card-content div {
+    background-color: #F74F54;
+    min-height: 1px;
+    width: 50px;
+    position: relative;
+    margin: 12px auto 10px auto;
+}
 
 
 /* ==========================================================================
