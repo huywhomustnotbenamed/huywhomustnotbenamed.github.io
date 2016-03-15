@@ -63,8 +63,8 @@ body {
 }
 
 header {
-    background-image: url("../img/header-image.jpg");
-    min-height: 600px;
+/*    background-image: url("../img/header-image.jpg");
+    min-height: 600px;*/
     color: white;
 }
 
@@ -79,13 +79,20 @@ h1 {
 }
 
 .parallax-container {
-    height: 300px;
+    height: 550px;
 }
 
 .things h3 {
     font-size: 1em;
 }
 
+.things .col {
+    border-top: 1px solid grey;
+}
+
+.things .col {
+    border-left: 1px solid grey;
+}
 
 
 
