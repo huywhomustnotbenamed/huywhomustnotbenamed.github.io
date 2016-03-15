@@ -63,8 +63,8 @@ body {
 }
 
 header {
-/*    background-image: url("../img/header-image.jpg");
-    min-height: 600px;*/
+    background-image: url("../img/header-image.jpg");
+    min-height: 600px;
     color: white;
 }
 
@@ -76,6 +76,14 @@ h1 {
     font-family: 'Arapey', serif;
     font-size: 2.5em;
     text-align: center;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+.skills {
+    background-color: #303236;
 }
 
 .parallax-container {
@@ -100,7 +108,7 @@ h1 {
 }
 
 .things .card {
-    opacity: 0.5;
+    opacity: 0.4;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -ms-transition: opacity 0.5s ease-in-out;
@@ -109,7 +117,6 @@ h1 {
 }
 
 .things .card:hover {
-    /*background-color: grey !important;*/
     opacity: 1;
 }
 
