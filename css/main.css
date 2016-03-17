@@ -78,6 +78,7 @@ h1 {
     text-align: center;
     opacity: 0.85;
     margin-bottom: 50px;
+    margin-top: 0;
 }
 
 h2 {
@@ -96,6 +97,10 @@ h2 {
 .link-right {
     padding-left: 7px;
     border-left: 1px solid #F74F54;
+}
+
+.resume {
+    background-color: #F74F54;
 }
 
 .skills {
@@ -149,7 +154,7 @@ h2 {
 }
 
 footer {
-    background-color: #F74F54;
+    background-color: #303236;
     color: white;
     text-align: center;
 }
