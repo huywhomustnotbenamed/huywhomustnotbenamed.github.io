@@ -107,6 +107,10 @@ h2 {
     background-color: #303236;
 }
 
+.skills .card-content {
+    background-color: #303236;
+}
+
 .parallax-container {
     height: 300px;
 }
