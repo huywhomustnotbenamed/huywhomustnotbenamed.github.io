@@ -115,6 +115,10 @@ h2 {
     height: 300px;
 }
 
+.things {
+    margin-top: 50px;
+}
+
 .things h3 {
     font-size: 1em;
     font-family: 'Arapey', serif;
@@ -122,7 +126,7 @@ h2 {
 
 }
 
-.things .col:nth-child(n+6) {
+.things .col:nth-child(n+5) {
     border-top: 1px solid #cfd8dc;
 }
 
@@ -145,7 +149,7 @@ h2 {
     opacity: 1;
 }
 
-.things .col:nth-child(6), .col:nth-child(2) {
+.things .col:nth-child(5), .col:nth-child(1) {
     border-left: 0;
 }
 
