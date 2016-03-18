@@ -61,6 +61,10 @@ h1 {
     margin-bottom: 70px;
 }
 
+h1 span {
+    font-weight: 800;
+}
+
 h2 {
     font-size: 1.2em;
 }
