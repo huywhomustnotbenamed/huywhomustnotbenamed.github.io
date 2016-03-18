@@ -21,11 +21,11 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <main>
+    <main id="top">
         <div class="container">
             <div class="cbp-af-header">
                 <div class="cbp-af-inner">
-                    <h1><a href="#">Huy Huynh</a></h1>
+                    <h1><a href="#top">Huy Huynh</a></h1>
                     <div class="nav">
                         <a href="#work">Work</a>
                         <a href="#skills">Skills</a>
@@ -406,6 +406,21 @@
     ga('send', 'pageview');
 
     $('.parallax').parallax();
+
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 400);
+            return false;
+          }
+        }
+      });
+    });
     </script>
 </body>
 
