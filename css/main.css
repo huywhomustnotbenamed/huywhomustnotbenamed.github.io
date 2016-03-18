@@ -163,7 +163,11 @@ footer {
     color: white;
 }
 
-.col.l3.offset-l2 {
+footer i {
+    padding-left: 10px;
+}
+
+footer ul {
     text-align: right;
 }
 
