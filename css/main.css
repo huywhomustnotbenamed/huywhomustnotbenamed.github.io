@@ -401,6 +401,7 @@ footer a:hover {
 .grid figure p {
     letter-spacing: 1px;
     font-size: 75%;
+    text-transform: none;
 }
 
 figure.effect-sadie figcaption::before {
