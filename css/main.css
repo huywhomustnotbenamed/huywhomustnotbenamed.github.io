@@ -60,6 +60,7 @@ body {
     background-color: #eceff1;
     font-size: 18px;
     font-weight: 200;
+    letter-spacing: 1px;
 }
 
 header {
@@ -245,7 +246,7 @@ footer li {
 
 .grid figure p {
     letter-spacing: 1px;
-    font-size: 68.5%;
+    font-size: 75%;
 }
 
 figure.effect-sadie figcaption::before {
@@ -292,13 +293,30 @@ figure.effect-sadie p {
 
 figure.effect-sadie p {
     position: absolute;
-    bottom: 0;
+    top: 40%;
     left: 0;
     padding: 2em;
     width: 100%;
     opacity: 0;
     -webkit-transform: translate3d(0,10px,0);
     transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie h3 {
+    font-size: 68.5%;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0,10px,0);
+    transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie {
+    display: block;
 }
 
 figure.effect-sadie:hover h2 {
@@ -309,6 +327,12 @@ figure.effect-sadie:hover h2 {
 
 figure.effect-sadie:hover figcaption::before ,
 figure.effect-sadie:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-sadie:hover h3 {
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
