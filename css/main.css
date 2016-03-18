@@ -108,6 +108,17 @@ h2 {
     background-color: #f86d72;
 }
 
+.resume h1 {
+    margin-bottom: 30px;
+}
+
+.resume .btn {
+    background-color: #fff;
+    color: #303236;
+    text-transform: none;
+    font-weight: 400;
+}
+
 .skills {
     background-color: #303236;
 }
