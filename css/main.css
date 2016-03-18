@@ -41,6 +41,13 @@ header {
     color: white;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+}
+
 section {
     padding: 60px 0;
 }
