@@ -21,27 +21,26 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <main>
-        <nav class="white z-depth-0">
-            <div class="nav-wrapper container">
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
-                </ul>
+    <main id="top">
+        <div class="container">
+            <div class="cbp-af-header">
+                <div class="cbp-af-inner">
+                    <h1><a href="#top">Huy Huynh</a></h1>
+                    <div class="nav">
+                        <a href="#work">Work</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#resume">Resumé</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
+
         <header>
             <h1>huy huynh</h1>
         </header>
+        <a class="anchor" id="work"></a>
         <section class="work">
             <article>
                 <h1>Work</h1>
@@ -168,6 +167,7 @@
                 </div>
             </article>
         </section>
+        <a class="anchor" id="skills"></a>
         <section class="skills white-text">
             <article class="container">
                 <h1>Skills</h1>
@@ -259,6 +259,7 @@
                 </div>
             </article>
         </section>
+        <a class="anchor" id="resume"></a>
         <section class="resume">
             <article class="container">
                 <h1 class="white-text">Resumé</h1>
@@ -267,6 +268,7 @@
                 </div>
             </article>
         </section>
+        <a class="anchor" id="about"></a>
         <section class="about">
             <article class="container">
                 <h1>About</h1>
@@ -356,6 +358,7 @@
                 </div>
             </article>
         </section>
+        <a class="anchor" id="contact"></a>
         <footer>
             <article class="container">
                 <h1>Contact</h1>
@@ -377,6 +380,8 @@
             </article>
         </footer>
     </main>
+    <script src="js/vendor/classie.js" type="text/javascript"></script>
+    <script src="js/vendor/cbpAnimatedHeader.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
@@ -399,7 +404,23 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
+
     $('.parallax').parallax();
+
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 400);
+            return false;
+          }
+        }
+      });
+    });
     </script>
 </body>
 
