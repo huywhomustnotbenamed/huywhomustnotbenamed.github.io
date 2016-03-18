@@ -344,7 +344,7 @@ footer a:hover {
     overflow: hidden;
     margin: 10px 1%;
     width: 100%;
-    background: #3085a3;
+    background: white;
     text-align: center;
     cursor: pointer;
 }
@@ -354,7 +354,7 @@ footer a:hover {
     display: block;
     min-height: 100%;
     max-width: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .grid figure figcaption {
