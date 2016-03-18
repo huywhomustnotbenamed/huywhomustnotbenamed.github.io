@@ -2,7 +2,6 @@
 
 html {
     color: #222;
-    font-size: 1em;
     line-height: 1.4;
 }
 
@@ -14,34 +13,6 @@ html {
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
 }
 
 .browserupgrade {
@@ -196,147 +167,19 @@ footer a {
 }
 
 footer a:hover {
-    color: #F74F54;
+    color: #fa9ea1;
 }
 
 /* ==========================================================================
    Nav Bar
    ========================================================================== */
 
-   .cbp-af-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #f6f6f6;
-    z-index: 10000;
-    height: 230px;
-    overflow: hidden;
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    transition: height 0.3s;
-   }
-
-   .cbp-af-header .cbp-af-inner {
-    width: 90%;
-    max-width: 69em;
-    margin: 0 auto;
-    padding: 0 1.875em;
-   }
-
-   .cbp-af-header h1,
-   .cbp-af-header .nav {
-    display: inline-block;
-    position: relative;
-   }
-
-    /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
-   .cbp-af-header h1,
-   .cbp-af-header .nav a {
-    line-height: 230px;
-   }
-
-   .cbp-af-header h1 {
-    text-transform: uppercase;
-    color: #333;
-    letter-spacing: 4px;
-    font-size: 4em;
-    margin: 0;
-    float: left;
-   }
-
-   .cbp-af-header .nav {
-    float: right;
-   }
-
-   .cbp-af-header .nav a {
-    color: #aaa;
-    font-weight: 700;
-    margin: 0 0 0 20px;
-    font-size: 1.4em;
-   }
-
-   .cbp-af-header .nav a:hover {
-    color: #333;
-   }
-
-   /* Transitions and class for reduced height */
-   .cbp-af-header h1,
-   .cbp-af-header .nav a {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink {
-    height: 90px;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink h1,
-   .cbp-af-header.cbp-af-header-shrink .nav a {
-    line-height: 90px;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink h1 {
-    font-size: 2em;
-   }
-
-   /* Example Media Queries */
-   @media screen and (max-width: 55em) {
-
-    .cbp-af-header .cbp-af-inner {
-        width: 100%;
-    }
-
-    .cbp-af-header h1,
-    .cbp-af-header .nav {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        float: none;
-    }
-
-    .cbp-af-header h1,
-    .cbp-af-header .nav a {
-        line-height: 115px;
-    }
-
-    .cbp-af-header .nav a {
-        margin: 0 10px;
-    }
-
-    .cbp-af-header.cbp-af-header-shrink h1,
-    .cbp-af-header.cbp-af-header-shrink .nav a {
-        line-height: 45px;
-    }
-
-    .cbp-af-header.cbp-af-header-shrink h1 {
-        font-size: 2em;
-    }
-
-    .cbp-af-header.cbp-af-header-shrink .nav a {
-        font-size: 1em;
-    }
-   }
-
-   @media screen and (max-width: 32.25em) {
-    .cbp-af-header .nav a {
-        font-size: 1em;
-    }
-   }
-
-   @media screen and (max-width: 24em) {
-    .cbp-af-header .nav a,
-    .cbp-af-header.cbp-af-header-shrink .nav a {
-        line-height: 1;
-    }
-   }
 .cbp-af-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: #f6f6f6;
+    background: white;
     z-index: 10000;
     height: 230px;
     overflow: hidden;
@@ -346,10 +189,9 @@ footer a:hover {
 }
 
 .cbp-af-header .cbp-af-inner {
-    width: 90%;
     max-width: 69em;
     margin: 0 auto;
-    padding: 0 1.875em;
+    padding: 0;
 }
 
 .cbp-af-header h1,
@@ -358,16 +200,17 @@ footer a:hover {
     position: relative;
 }
 
+ /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
 .cbp-af-header h1,
 .cbp-af-header .nav a {
     line-height: 230px;
 }
 
 .cbp-af-header h1 {
-    text-transform: uppercase;
-    color: #333;
-    letter-spacing: 4px;
-    font-size: 4em;
+    font-family: Roboto, Calibri, Trebuchet, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 3em;
     margin: 0;
     float: left;
 }
@@ -377,14 +220,14 @@ footer a:hover {
 }
 
 .cbp-af-header .nav a {
-    color: #aaa;
-    font-weight: 700;
+    color: #f86d72;
+    font-weight: 300;
     margin: 0 0 0 20px;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 .cbp-af-header .nav a:hover {
-    color: #333;
+    color: #fa9ea1;
 }
 
 /* Transitions and class for reduced height */
