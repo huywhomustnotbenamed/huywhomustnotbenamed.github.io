@@ -100,7 +100,7 @@ h2 {
 }
 
 .resume {
-    background-color: #F74F54;
+    background-color: #f86d72;
 }
 
 .skills {
@@ -163,12 +163,20 @@ footer {
     color: white;
 }
 
+footer ul {
+    text-align: right;
+}
+
 footer i {
     padding-left: 10px;
 }
 
-footer ul {
-    text-align: right;
+footer a {
+    color: #f86d72;
+}
+
+footer a:hover {
+    color: #F74F54;
 }
 
 /* ==========================================================================
