@@ -91,10 +91,6 @@ h2 {
     background-color: #f86d72;
 }
 
-.resume h1 {
-    margin-bottom: 30px;
-}
-
 .resume .btn {
     background-color: #fff;
     color: #303236;
@@ -166,6 +162,10 @@ footer {
     color: white;
 }
 
+footer h1 {
+    margin-bottom: 30px;
+}
+
 footer ul {
     text-align: right;
 }
@@ -212,7 +212,6 @@ footer a:hover {
     position: relative;
 }
 
- /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
 .cbp-af-header h1,
 .cbp-af-header .nav a {
     line-height: 230px;
@@ -251,7 +250,6 @@ footer a:hover {
     color: #fa9ea1;
 }
 
-/* Transitions and class for reduced height */
 .cbp-af-header h1,
 .cbp-af-header .nav a {
     -webkit-transition: all 0.3s;
