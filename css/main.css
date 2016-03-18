@@ -133,7 +133,7 @@ h2 {
 }
 
 .things .card {
-    opacity: 0.4;
+    opacity: 0.7;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -ms-transition: opacity 0.5s ease-in-out;
@@ -150,9 +150,9 @@ h2 {
 }
 
 .things .card-content div {
-    background-color: #F74F54;
+    background-color: #f86d72;
     min-height: 1px;
-    width: 50px;
+    width: 70px;
     position: relative;
     margin: 12px auto 10px auto;
 }
