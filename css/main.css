@@ -385,6 +385,7 @@ footer a:hover {
 }
 
 .grid figure h2 {
+    opacity: 0;
     word-spacing: -0.15em;
     font-weight: 300;
 }
@@ -475,6 +476,7 @@ figure.effect-sadie {
 }
 
 figure.effect-sadie:hover h2 {
+    opacity: 1;
     color: #fff;
     -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
     transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
