@@ -211,8 +211,17 @@ footer a:hover {
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 3em;
+    color: #303236 !important;
     margin: 0;
     float: left;
+}
+
+.cbp-af-header h1 a {
+    color: #303236;
+}
+
+.cbp-af-header h1 a:hover {
+    color: #6c707a;
 }
 
 .cbp-af-header .nav {
