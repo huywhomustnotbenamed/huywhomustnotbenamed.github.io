@@ -131,7 +131,7 @@ header h2 {
     margin: 0;
 }
 
-.things .col:nth-child(n+5) {
+.things .col:nth-child(n+4) {
     border-top: 1px solid #cfd8dc;
 }
 
@@ -154,7 +154,7 @@ header h2 {
     opacity: 1;
 }
 
-.things .col:nth-child(5), .col:nth-child(1) {
+.things .col:nth-child(4), .col:nth-child(1) {
     border-left: 0;
 }
 
