@@ -481,7 +481,7 @@ figure.effect-sadie:hover img {
 
 figure.effect-sadie h2 {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 0;
     width: 100%;
     -webkit-transition: -webkit-transform 0.35s, color 0.35s;
@@ -527,8 +527,8 @@ figure.effect-sadie {
 figure.effect-sadie:hover h2 {
     opacity: 1;
     color: #fff;
-    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
-    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    -webkit-transform: translate3d(0,20%,0) translate3d(0,40px,0);
+    transform: translate3d(0,20%,0) translate3d(0,40px,0);
 }
 
 figure.effect-sadie:hover figcaption::before ,
