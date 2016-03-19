@@ -34,13 +34,6 @@ body {
     letter-spacing: 1px;
 }
 
-header {
-    margin-top: 150px;
-    background-image: url("../img/header-image.jpg");
-    min-height: 600px;
-    color: white;
-}
-
 a.anchor {
     display: block;
     position: relative;
@@ -69,21 +62,11 @@ h2 {
     font-size: 1.2em;
 }
 
-.activator {
-    display: block;
-}
-
-.card-action-link {
-    padding-right: 5px;
-    display: inline-block;
-}
-
-.link-right {
-    padding-left: 7px;
-    border-left: 1px solid #F74F54;
-}
-
 header {
+    margin-top: 150px;
+    background-image: url("../img/header-image.jpg");
+    min-height: 600px;
+    color: white;
     margin-bottom: -60px;
 }
 
@@ -114,10 +97,6 @@ header {
 
 .skills img {
     width: 100%;
-}
-
-.parallax-container {
-    height: 300px;
 }
 
 .about p {
