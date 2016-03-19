@@ -120,6 +120,10 @@ header {
     height: 300px;
 }
 
+.about p {
+    font-weight: 300;
+}
+
 .things {
     margin-top: 50px;
 }
