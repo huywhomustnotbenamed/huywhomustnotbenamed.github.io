@@ -180,8 +180,8 @@ footer ul {
     text-align: right;
 }
 
-footer i {
-    padding-left: 10px;
+footer li {
+    padding-bottom: 20px;
 }
 
 footer .btn {
