@@ -184,12 +184,11 @@ footer i {
     padding-left: 10px;
 }
 
-footer a {
-    color: #f86d72;
-}
-
-footer a:hover {
-    color: #fa9ea1;
+footer .btn {
+    background-color: #fff;
+    color: #303236;
+    text-transform: none;
+    font-weight: 400;
 }
 
 /* ==========================================================================
