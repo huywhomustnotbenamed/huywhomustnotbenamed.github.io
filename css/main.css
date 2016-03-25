@@ -167,21 +167,14 @@ header h2 {
 }
 
 footer {
-    padding: 60px 0;
+    padding: 60px 0 60px 0;
     background-color: #303236;
     color: white;
+    text-align: center;
 }
 
-footer h1 {
-    margin-bottom: 30px;
-}
-
-footer ul {
-    text-align: right;
-}
-
-footer li {
-    padding-bottom: 20px;
+footer a {
+    margin-top: 20px;
 }
 
 footer .btn {
